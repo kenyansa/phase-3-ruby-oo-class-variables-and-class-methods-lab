@@ -9,7 +9,7 @@ class Song
         @name = name
         @genre = genre
         @artist = artist #ndividual song is initialized with a name, artist and genre.
-        @@count += 1 #class variable count set to 0, goes up as son as new song is initialized
+        @@count += 1 #class variable count set to 0, goes up as soon as new song is initialized
         @@genres << genre
         @@artists << artist
     end
@@ -19,7 +19,7 @@ class Song
     end
     
     def self.genres
-        @@genres.uniq #eturns an array of all of the genres of existing songs. This array should contain only unique genres — no duplicates! 
+        @@genres.uniq #returns an array of all of the genres of existing songs. This array should contain only unique genres — no duplicates! 
     end
 
     def self.genre_count #creating a histogram for genre_count
