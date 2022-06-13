@@ -10,8 +10,8 @@ class Song
         @genre = genre
         @artist = artist #ndividual song is initialized with a name, artist and genre.
         @@count += 1 #class variable count set to 0, goes up as soon as new song is initialized
-        @@genres << genre
-        @@artists << artist
+        @@genres << genre # the "shovel operator" pushes new genre objects onto the empty array
+        @@artists << artist ## the "shovel operator" pushes new artist objects onto the empty array
     end
 
     def self.count
